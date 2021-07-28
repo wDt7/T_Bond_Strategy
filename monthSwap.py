@@ -10,13 +10,13 @@ plt.style.use({'figure.figsize':(10, 4)})
 plt.rcParams['font.family']=['STKaiti']
 plt.rcParams['axes.unicode_minus'] = False
 from jqdatasdk import *
-auth('15821818592','8414144aA')
 
-t10 = do.get_data('t10')
-t10.index= t10.date
 
-future = pd.read_excel('/Users/wdt/Desktop/tpy/Quanti/交易信号/macross_boll_V1/future.xlsx')
-future.index = future.date
+
+# future = pd.read_excel('/Users/wdt/Desktop/tpy/Quanti/交易信号/macross_boll_V1/future.xlsx')
+# future.index = future.date
+
+#####********* based on WindData
 
 data_oi = do.get_data('all_treasure_futures_oi')
 data_oi.index=data_oi.date
